@@ -1,28 +1,80 @@
+html {
+	background-color: #fafafa;
+	margin: 0;
+}
+
 body {
-	background: white;
-    font-family: arial, sans-serif;
+	background: #fff;
+	color: #000;
+    font-family: Helvetica, arial, sans-serif;
     font-size: 12pt;
-	margin: 10px 10px 10px 10px;
-	padding: 10px;
+	margin: 0 auto;
+	padding: 0 10px 0 10px;
+	width: 1000px;
 }
-a, a:visited, a:active {
-	color: #03c;
+
+a, a:visited, a:hover {
+	color: #222;
 }
-a:hover {
-	text-decoration: none;
+
+h1#oauth-title {
+	background: transparent url(../images/oauth-200.png) no-repeat scroll top left;
+	height: 135px;
+    text-indent: 250px;
+	font-size: 42pt;
+	margin: 0;
+	padding: 65px 0 0 0;
+	text-shadow: #ddd 3px 3px 2px;
 }
-img {
-	border: 0;
-}
-h1 {
-    font-size: 18pt;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-h2 {
+
+h2#oauth-tagline {
     font-size: 16pt;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+	color: #555;
+	text-shadow: #ddd 2px 2px 2px;
+	margin-bottom: 30px;
 }
-h3 {
-    font-size: 14pt;
-    font-weight: normal;
+
+ul#oauth-checklist {
+	margin: 0 0 0 170px;
+	padding: 50px 0 50px 0;
+	list-style-type: none;
+	counter-reset: item;
+}
+
+ul#oauth-checklist > li {
+	width: 320px;
+	margin-bottom: 50px;
+}
+
+ul#oauth-checklist > li h3 {
+	font-size: 26pt;
+	margin: 0 0 15px 20px;
+	color: #333;
+}
+
+ul#oauth-checklist li ol {
+	margin: 0;
+	padding: 0;
+}
+
+ul#oauth-checklist > li > ol > li:before {
+	counter-increment: item;
+	content: counter(item) ". ";
+	padding-right: 3px;
+	font-style: italic;
+}
+
+ul#oauth-checklist > li > ol > li {
+	list-style-type: none;
+	line-height: 1.6em;
+}
+
+#oauth-footer {
+	text-align: center;
+	font-size: 9pt;
+	color: #555;
+	padding-bottom: 10px;
 }
