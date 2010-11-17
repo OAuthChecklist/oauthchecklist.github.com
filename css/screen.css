@@ -1,0 +1,28 @@
+body {
+	background: white;
+    font-family: arial, sans-serif;
+    font-size: 12pt;
+	margin: 10px 10px 10px 10px;
+	padding: 10px;
+}
+a, a:visited, a:active {
+	color: #03c;
+}
+a:hover {
+	text-decoration: none;
+}
+img {
+	border: 0;
+}
+h1 {
+    font-size: 18pt;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+h2 {
+    font-size: 16pt;
+}
+h3 {
+    font-size: 14pt;
+    font-weight: normal;
+}
