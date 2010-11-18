@@ -1,10 +1,5 @@
-html {
-	background-color: #fafafa;
-	margin: 0;
-}
-
 body {
-	background: #fff;
+	background-color: #fff;
 	color: #000;
     font-family: Helvetica, arial, sans-serif;
     font-size: 12pt;
@@ -23,7 +18,7 @@ h1#oauth-title {
     text-indent: 250px;
 	font-size: 42pt;
 	margin: 0;
-	padding: 65px 0 0 0;
+	padding: 60px 0 0 0;
 	text-shadow: #ddd 3px 3px 2px;
 }
 
@@ -34,19 +29,36 @@ h2#oauth-tagline {
 	text-align: center;
 	color: #555;
 	text-shadow: #ddd 2px 2px 2px;
-	margin-bottom: 30px;
+	margin-top: -60px;
+	text-indent: 100px;
 }
 
 ul#oauth-checklist {
-	margin: 0 0 0 170px;
-	padding: 50px 0 50px 0;
+	margin: 0 0 0 215px;
+	height: 500px;
 	list-style-type: none;
 	counter-reset: item;
 }
 
 ul#oauth-checklist > li {
-	width: 320px;
-	margin-bottom: 50px;
+    background-color: #ccc;
+	width: 310px;
+	padding: 5px 5px 5px 10px;
+	margin-bottom: 30px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+ul#oauth-checklist > li.ux {
+    background-color: #bdc;
+}
+
+ul#oauth-checklist > li.development {
+    background-color: #bcd;
+}
+
+ul#oauth-checklist > li.security {
+    background-color: #dcb;
 }
 
 ul#oauth-checklist > li h3 {
@@ -72,9 +84,32 @@ ul#oauth-checklist > li > ol > li {
 	line-height: 1.6em;
 }
 
-#oauth-footer {
-	text-align: center;
-	font-size: 9pt;
+#oauth-share {
+    position: absolute;
+    left: 200px;
+    top: 210px;
+	font-size: 10pt;
 	color: #555;
 	padding-bottom: 10px;
+}
+
+#oauth-share ul {
+	list-style-type: none;
+	margin-left: -30px;
+	line-height: 2em;
+}
+
+#oauth-footer {
+    position: absolute;
+    left: 800px;
+    top: 200px;
+	font-size: 10pt;
+	color: #555;
+	padding-bottom: 10px;
+}
+
+#oauth-footer ul {
+	list-style-type: none;
+	margin-left: -30px;
+	line-height: 2em;
 }
