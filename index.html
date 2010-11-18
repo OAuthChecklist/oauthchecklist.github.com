@@ -8,10 +8,9 @@
 	</head>
 	<body>
 		<h1 id="oauth-title">OAuth Checklist</h1>
-		<h2 id="oauth-tagline">9 simple checks to ensure proper authorisation in your services</h2>
-		
+		<h2 id="oauth-tagline">Simple checks to ensure proper authorization in your services</h2>	
 		<ul id="oauth-checklist">
-			<li>
+			<li class="ux">
 				<h3>UX</h3>
 				<ol>
     				<li>Remove passwords from API calls</li>
@@ -19,7 +18,7 @@
 					<li>Offer detailed permissions, or scopes</li>
 				</ol>
 			</li>
-			<li>
+			<li class="development">
 				<h3>Development</h3>
 				<ol>
     				<li>Use a well tested OAuth library</li>
@@ -27,7 +26,7 @@
     				<li>Document your OAuth implementation</li>
 				</ol>
 			</li>
-			<li>
+			<li class="security">
 				<h3>Security</h3>
 				<ol>
     				<li>Encrypt all OAuth credentials</li>
@@ -36,7 +35,32 @@
 				</ol>
 			</li>
 		</ul>
-		
-		<div id="oauth-footer">created by Bruno Pedro (<a href="http://tarpipe.com">tarpipe</a>). designed by Rui Lopes (<a href="http://boomux.com">boomUX</a>).</div>
+		<div id="oauth-share">
+		    <ul>
+		        <li><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+		        <li><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Foauthchecklist.org&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe></li>
+		    </ul>
+		</div>
+		<div id="oauth-footer">
+		    <h2>List curated by</h2>
+		    <ul>
+		        <li>Bruno Pedro, <a href="http://tarpipe.com">tarpipe</a></li>
+		        <li>Eduardo Pinto, <a href="http://sapo.pt">sapo</a></li>
+		        <li>Rui Lopes, <a href="http://boomux.com">boomUX</a></li>
+		    </ul>
+		</div>
+	    <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-3452707-5']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
 	</body>
 </html>
